@@ -18,6 +18,7 @@ app.listen(PORT,()=>{
 
 //routes
 app.use('/user',require('./routes/useRouter'))
+app.use('/api',require('./routes/categoryRouter'))
 //connect MOngodb
 const URI=process.env.MONGODB_URL;
 console.log("MongoDB URL:", process.env.MONGODB_URL); 
